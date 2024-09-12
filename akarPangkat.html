@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function akar_pangkat(a) {
+        if (a < 0) {
+          return "Tidak bisa input bilangan negatif";
+        }
+
+        if (a % 2 !== 0) {
+          return "Tidak bisa input bilangan ganjil";
+        }
+
+        return `Akar pangkat 2 dari ${a} adalah ${Math.sqrt(a)}`;
+      }
+
+      let input = prompt("Masukkan bilangan genap:");
+
+      if (!isNaN(input)) {
+        let a = parseInt(input);
+        alert(akar_pangkat(a));
+      } else {
+        alert("Input harus berupa angka!");
+      }
+    </script>
+  </body>
+</html>
