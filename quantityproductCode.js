@@ -47,7 +47,6 @@ function sumTotalQuantity(productCode) {
   return sumQuantity;
 }
 
-// Calculate total quantity for the given product code
 const productCode = "FBR00040101";
 const sumQuantity = sumTotalQuantity(productCode);
 
